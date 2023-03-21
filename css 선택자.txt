@@ -1,0 +1,77 @@
+css
+선택자 {속성: 속성값;}
+
+*선택자
+
+1. 태그 선택자 ex>div {background: red;}
+
+2.아이디선택자 (tagname)#idname ex> #header {font-size:14px;}
+div#header
+
+3.클래스 선택자 (tagname).classname
+ ex> .large {font-size: 24px;}
+p.large
+
+4.모든 선택자 *ex>* {padding:0; margin:0;}
+*복합 선택자
+
+5. 하위 선택자 ex> #header li { width:25%;}
+선택자 선택자
+
+6. 자식 선택자 ex> #header > p {width:200px;}
+선택자 > 선택자
+
+7.형제 선택자
+1)인접 형제 선택자 선택자 A+선택자B
+ex> h2 + p {background: yollow;}
+2)일반 형제 선택자 선택자A ~ 선택자B
+ex) h2 ~ p {background: red;}
+
+8. 속성 선택자 [id]
+div[id]
+input[type="text"]
+
+9. 가상 클래스 선택자
+1)동적 선택자
+:link  선택자가 방문하지 않은 링크일 때
+ex> a:link { color: yellow;}
+:visited 선택자가 방문한 링크일 때
+ex> a:visited {color: blue;}
+:hover 선택자가 마우스가 올라와 있을 때    
+ex> a:hover {color: red;}
+:active 선택자가 클릭된 상태일 때
+ex> a:active {color: pink;}
+:focus  선택자의 포커스가 들어와 있을 때
+ex> #userid:focus {background: yellow;}
+
+
+2)구조 가상 클래스 선택자
+:first-child 선택자에 해당하는 모든 요소 중 첫번째 자식 요소를 선택
+:last-child 선택자에 해당하는 모든 요소 중 마지막 자식 요소를 선택
+:nth-child(n) 선택자에 해당하는 모든 요소 중 n번째 자식 요소를 선택
+:nth-child(odd) 선택자에 해당하는 모든 요소 중 홀수번째 자식 요소를 선택
+:nth-child(even) 선택자에 해당하는 모든 요소 중 짝수번째 자식 요소를 선택
+
+3.부정 선택자
+:not(선택자) 선택자가 해당하디 않는 모든 요소를 선택
+ex> div:not(.left)
+ex> li:not(:last-child)
+
+
+
+
+display
+block/inline-block/inline/none
+float 와 clear 속성을 사용한 레이아웃 지정
+float
+left/right
+
+
+
+
+
+
+
+
+
+

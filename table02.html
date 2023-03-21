@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>테이블의 구조적 표현</title>
+		<style>
+			table {
+				
+				border-collapse: collapse;
+				width: 1000px;
+				margin: 0 auto;
+				/* border-top: 3px double blue; */
+			    /* double은 두께를 무조건 3px이상 줘야함 */
+				/* border-top: 3px dashed blue; */
+				border-top: 3px solid blue;
+			}
+
+			td, th {
+				border-bottom: 1px solid blue;
+				padding: 6px;
+				
+			}
+
+			td:not(:last-child), th:not(:last-child) {
+				border-right: 1px solid blue
+			}
+
+			th:nth-child(1) {
+				width: 200px;
+				
+			}
+
+			th:nth-child(2) {
+				width: 500px;
+				
+			}
+
+			th:nth-child(3) {
+				width: 150px;
+				
+			}
+
+			th:nth-child(4) {
+				width: 150px;
+				
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<h1>표의 구조적인 표현 thead, tbody, tfoot</h1>
+		<table>
+			<caption>과목별 추천도서</caption>
+			<thead>
+				<tr>
+					<th scope="col">과목</th>
+					<th scope="col">책제목</th>
+					<th scope="col">저자</th>
+					<th scope="col">출판사</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>웹프로그래밍</td>
+					<td>html5 웹프로그래밍 입문</td>
+					<td>박희민</td>
+					<td>그린</td>
+				</tr>
+				<tr>
+					<td>웹프로그래밍</td>
+					<td>css스타일의 모든것</td>
+					<td>박희민</td>
+					<td>그린</td>
+				</tr>
+				<tr>
+					<td>웹프로그래밍</td>
+					<td>바닐라 자바스크립트</td>
+					<td>박희민</td>
+					<td>그린</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>합계</td>
+					<td colspan="3">3권</td>
+					
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

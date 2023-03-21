@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- 모바일 값 -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- ul>li*3 -->
+    <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+    <!-- -------------- -->
+    <!-- (ul>li*3)*3 -->
+    <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+    <!-- div 묶음
+    span 인라인 소묶음 <p><span>그린</span>컴퓨터 아카데미</p> -->
+    <h1>폼태그</h1>
+    <form mathod="get" action="join.php">
+        <!-- method는 전송방식 post 보안안정 get게시글  action.php등록-->
+        <p><input type="text" name="userId" placeholder="아이디"></p>
+        <!-- text는 입력칸이 생김 placeholder는 사용자에가 어떤 input인지 알려주는 역할-->
+        <p><input type="password" name="userPass" placeholder="비밀번호"></p>
+        <!-- password타입으로하면 비번칠때 가려짐 -->
+        <p>남성<input type="radio" name="gender" value="m">
+        여성<input type="radio" name="gender" value="f"></p>
+        <!-- value는 input이 가지고 있는 값, radio는 원형 빈칸 선택? -->
+        <p><select name="job" id="">
+            <option value="a">강사</option>
+            <option value="b">학생</option>
+            <option value="c">회사원</option>
+        </select></p>
+        <!-- 옵션에 있는 value값이 job에 담겨짐 -->
+        <p><input type="submit" value="전송"></p>
+        <!-- submit는 버튼 생김 -->
+        <p><input type="reset" value="취소"></p>
+        <!-- reset은 input값을 초기화 시키는 역할 -->
+    </form>
+</body>
+</html>

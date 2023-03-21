@@ -1,0 +1,28 @@
+mixins 재활용   https://www.sassmeister.com/
+스타일 시트 내에 재사용할 css선언 그룹을 정의
+
+1. 선언하기 @mixin
+ex) @mixin flexbox($dir, $justify, $align) {
+	display: flex;
+	flex-direction: $dir;
+	justify-content: $justify;
+	align-items: $alignr;
+	
+}
+div {
+	@includ flexbox(column, center, center)
+
+)
+ul {
+	@include flexbox(row, space-between, center)
+}
+
+2. 사용하기 @include
+*스타일 블록 전달하기
+@mixin 믹스인이름() {
+	@content;
+}
+@content;
+@include 믹스인 이름() {
+	color: red;
+}

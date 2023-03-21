@@ -1,0 +1,34 @@
+text 관련 속성
+font-size 글자크기
+color 글자색상
+font-weight 두께
+letter-spacing 자간-줄간격
+font-family 서체
+line-height행높이(줄높이)
+text-decoration 밑줄
+
+
+text-align: 정렬
+padding 10px 20px 30px 40px
+padding-left/padding-right/padding-bottom/
+padding-top
+margin: 10px 20px /margin-left/ margin-right/margin-top 
+            0    auto
+border-width: 1px
+border-style: solid
+border-color: red
+border: 1px solid red;
+border-right: 1px solid red;
+border-left: 2px solid blue;
+border-bottom: 1px #ccc;
+border-top: 1px solid #ccc;
+
+box-sizing: border-box; 
+
+display
+none/block/inline/inline-block
+
+*font-size
+float
+left/right
+*clear

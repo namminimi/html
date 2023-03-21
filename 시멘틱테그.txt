@@ -1,0 +1,24 @@
+html5 시멘틱 태그
+의미있는 요소
+1. header 요소 html문서의 헤더를 정의하는 요소
+ex> <header></header>
+2. section 요소 html 문서의 sction을 정의하는 요소
+section이란 제목이 있으면 html문서의 전체적인 내용과 관련이 있는 콘텐츠의 집합
+ex> <section></section>
+3.footer요소 html문서의 푸터부분을 정의하는 요소
+ex> <footer></footer>
+4.main html요소의 주요 컨텐츠 부분을 정의하는 요소
+ex> <main></main>
+5.nav html문서를 탐색하는 링크의 집합을 정의하는 요소
+
+<footer>
+<section>
+<main>
+<nav>
+<div id="warp>
+        <header></header>
+        <main>
+                    <section></section>
+        </main>
+        <footer></footer>
+</div>

@@ -1,0 +1,108 @@
+inline/text 중앙배치
+text-align: center
+
+*블럭요소 중앙배치
+margin: 0 auto;
+
+*웹폰트/ 웹아이콘 사용
+(구글에 구글웹폰트 검색
+눈누웹폰트 https://noonnu.cc/)
+아이콘 레퍼런스:
+(w3shcool 웹아이콘 https://www.w3schools.com/icons/google_icons_communication.asp)
+구글아이콘 적용 <head></head>
+2)아이콘 사용하기
+클래스명 material-icons
+<i class="meterial-icons">설명</i>
+3)아이콘 모양지정
+설명글 지정
+
+html 문서에 스타일 적용하기
+1)내부 스타일 시트
+<style> 태그 안에 작성
+
+2) 외부 스타일 시트
+css파일 따로 작성  style.css
+<link>태그로 불러오기
+
+ex) <link href="style.css">
+@import
+
+3)인라인 스타일
+태그안에 style속성
+<div style="속성: 속성값;"></div>
+
+*css에서 외부스타일 파일 불러오기
+@import url("파일경로")
+
+https://lipsum.com/
+
+css 속기법 border: 1px solid #ccc;
+border-width: 1px;
+border-color: #ccc;
+border-style: solid;
+
+*background
+background - color 배경색 
+
+background - image 배경이미지
+ex)background-image: url('이미지경로')
+
+background - repeat 배경이미지 반복
+no-repeat/ repeat-x/ repeat-y
+
+background - position 배경이미지 위치
+(left right center
+top bottom center
+x y)
+
+ex) background-position: left top
+ex) background-position: 100px 200px
+ex) background-size 배경이미지 크기
+ex) background-size: 200px 300px;
+cover: 지정한 요소를 다 덮도록 배경이미지를 확대/축소
+contain: 지정한 요소 안에 배경이미지가 다 나타나도록 배경이미지를 확대/축소
+크기값: 너비값과 높이 값을 지정
+ex)background-size: cover;
+ex)background-size: cotain;
+ex)background-size: 200px auto;
+
+background-attachment
+fixed
+
+overflow: hidden
+요소 공간에 벗어나는 것을 가려줌
+visible: 기본값 벗어나도 보임
+scroll: 스크롤바로 내려서 볼수있음
+
+http://greenweb.dothome.co.kr/ex/indigo/ 실습
+ 
+*position 위치
+html요소의 위치를 결정하는 방식을 설정
+위치를 결정하는 방식
+1. static 정적위치 - default 기준
+2. relative 상대위치 상대 box 기준
+3. absolute 절대위치 윈도우 기준
+4.fixed 고정 위치
+
+top속성
+left속성
+right속성
+bottom속성
+
+
+transform 속성
+html 요소의 모양 크기 위치 등을 변경
+1. 선택요소를 움직임
+translate(x,y)/ translateX(x)  / translateY(y) / translateZ(z)
+2. 선택요소 회전
+rotate(zdeg) / rotateX(xdeg) / rotateY(ydeg)
+3. 선택요소의 크기변경
+scale(x,y)/scaleX(x)/scaleY(y)
+4. 선택요소의 기울이기 변경
+skewX(xdeg) / skewY(ydeg)
+
+
+
+
+
+

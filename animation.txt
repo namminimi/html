@@ -1,0 +1,42 @@
+overflow-x 속성
+overflow-y 속성
+transition 속기법
+transition-duration 스타일 전환효과 진행시간
+transition-delay 스타일 전환 효과 지연 시간
+transition-property 스타일 전환 효과 속성 지정
+transition-timing-function 스타일 전환 효과 속도
+
+div {
+position: absolute;
+left: 0;
+top: 0;
+transition-property: left;
+transition-duration: 0.5s;
+transition: left 0.5s;
+}
+
+div:hover {
+left:100px;
+top: 100px;
+}
+
+animation 속기법
+장면을 만듬
+@keyframes widthCh(이름){
+           0%또는 from{
+                    width: 0;
+                 }
+           100%또는 to{
+                  width: 500px;
+                 }
+}
+
+div {
+        animation-name: widthCh;
+        animation-durarion: 1s;
+        animation-delay: 1s;
+        animation-iteration-count: 5; infinite
+}
+https://github.com/design-view/cssex
+
+https://webdesign.tutsplus.com/ko/tutorials/a-beginners-introduction-to-css-animation--cms-21068

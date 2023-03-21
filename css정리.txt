@@ -1,0 +1,226 @@
+div
+
+ul li h1~h6 p
+
+a span input select textarea 
+button i strong mark ins del 
+img
+
+시멘틱태그
+header main footer nav address section
+
+웹브라우저가 지정해줌
+display:block
+div p ul li dl dt dd header main footer
+address section등등
+
+-한행을 다차지
+-width속성과 height 속성을 지정할 수 있음
+-위/아래/좌/우/ padding, margin 지정할 수 있음
+
+
+
+
+inline 
+-가로로 배치
+-width와 height를 지정할 수 없음
+-왼쪽/오른쪽 padding지정 상단/하단padding지정 안됨
+a, img, span, i , strong 
+
+inline-block
+ input, buttom, select
+-가로로 배치
+-width와 height를 지정할 수 있음
+-padding/margin 지정할 수 있음
+-글자처럼 취급(부모요소의 text-align 속성으로 정렬할 수 있음)
+
+block 속성값인 태그 가운데 정렬;
+width를 지정하고 margin: 0 auto;
+
+
+float 레이아웃 잡기
+float: left
+float: right
+clear:left/right/both
+ul::after {
+content:"";
+display: block;
+clear:both
+}
+
+flex box
+
+*container
+display: flex;
+(flex-direction: row;
+flex-wrap:nowrap;)  따라오는 친구들
+
+flex-direction 아이템들의 배치방향 지정
+default: row
+row/row-reverse/column/column-reverse
+
+justify-content 주축방향으로 아이템들을 정렬
+flex-start/flex-end/center/space-between/space-around/space-evenly
+
+align-items 교차축 방향으로 아이템들을 정렬(한줄일 때)
+default : stretch
+flex-start/ flex-end/ center/ stretch
+
+
+flex-wrap 주축방향으로 아이템 배치를 한줄, 여러줄 지정
+default: nowrap
+wrap/nowrap/wrap-reverse
+
+align-content 교차축 방향으로 아이템을 정렬(여러줄일때)
+flex-start/flex-end/center/space-between/space-around
+
+
+*item
+1.order default: 0;
+작은 순번대로 배치
+2.align-self container 에게 지정한 align-items를 선택한 요소만 다시 지정
+
+
+*css변수 사용하기
+:root {
+         --main-color1: red;
+         --small-font: 14px;
+         --middle-font: 18px;
+         --large-font: 32px;
+         --default-padding: 16px;
+}
+
+*css함수
+var(--main-color1)
+var(--small-font)
+calc(100%-60px)
+translate(50px, 50px)
+rgba(r,b,b,a)
+
+*transform 요소의 변형
+translate(x,y)
+translateX(x)
+translateY(y)
+scale(x, y), scale(1): s
+skewX(45deg), skewY(45deg), skew(45deg)
+rotate(45deg)
+matrix
+transform: translate(50px, 50px) scale(2);
+
+transition
+*transition-duration 동작시간
+transition-delay 지연시간
+transition-property 속성지정
+transition-timing-function: 속도지정
+
+http://blog.naver.com/pink_candy02
+
+
+@keyframes name {
+              from(0%) {
+                             left:0;
+                   }
+              to(100%) {
+                            left: 500px;
+                   }
+}
+
+div {
+           animation: name 1s infinite
+}
+
+
+
+*반응형 웹 
+필수필수피루시ㅜㅏ이훌ㄴ이라ㅓㄴㅇㄹ어라ㅣㅐㅇㄴㅇㄹ너ㅕ휴
+
+768px 이하 모바일
+1024px 이하 테블릿
+그이상 모니터
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+
+
+}
+max-width: 1024px 1024미만
+min-width: 360px 360이상
+
+https://www.sassmeister.com/  사스-> scc로 코드 변환기
+
+scss ,css 파일 분리 경로
+좌측 상단 파일 
+기본설정에 설정 클릭
+검색창에 sass 검색후
+사용자에서 live sass compile settings:formats (밑에 쫌 내리면 있음)
+setting.js 편집 클릭
+savePath 에 "~/../css" 적고 저장
+
+
+scss 중첩 사용하기
+하위요소 스타일 작성
+-상위요소{}안에 작성
+-&선택한 요소 자신
+
+시작하는 이름이 같은 스타일 지정하기
+font-size, font-family, font-weight
+padding-top, padding-bottom, padding-left,
+paddinf-right
+- "-"대신 : (띄어쓰기) 작성
+
+
+font: {
+            size: 20px;
+	family: "나눔 고딕"
+	weight: bold;
+}
+
+클래스 이름의 시작이 같은 클래스 스타일 정의
+fs-small/fs-medium
+.fs {
+            &-small {
+			font-size: 16px;
+		}
+	&-medium {
+			font-size: 16px;
+}
+
+
+
+ex) div {
+            h1{ }
+           > div {
+                            a {
+                            }
+             }
+}
+ul {
+              li {
+                       font-size: 14px;
+                       &:nth-child(1) {}
+                       &:hover {}
+              }
+}
+
+
+css 변수 사용
+변수선언
+:root {
+	--main-a: 14px;
+}
+font-size:var(--main-a)
+scss변수 사용
+변수 등록
+$width: 100px;
+변수적용
+li{
+	width: $width;
+}
+
+3. 변수의 유효범위
+선언된 블록{} 내에서만 유효범위를 가짐.
+
+4. !global 플래그 
+변수의 유효범위를 전역(global)로 설정.
+
+*@at-root 중첩 벗어나기
+중첩 안에서 작성하지만 밖에서 사용 해야하는 경우

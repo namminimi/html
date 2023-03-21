@@ -1,0 +1,21 @@
+css변수!!!!!!!
+:root {
+    --color1 : red;
+    --color2 : blue;
+    --bigfont: 42px;
+    --smallfont: 12px;
+    --middlefont: 18px;
+}
+
+div { font-size: var(--smallfont)}
+variable
+
+http://greenweb.dothome.co.kr/ex/samsung/ 주말용
+
+그림자
+글자에 그림자를 지정
+text-shadow : x-offset y-offset blur color;
+ex> h2 {text-shadow: 2px 2px 5px red;}
+DOM 요소에 그림자를 지정
+box-shadow: x-offset y-offset blur color;
+ex> div { box-shadow: 2px 2px 5px red;}

@@ -1,0 +1,10 @@
+html
+css
+scss - css확장판
+*javascript
+mysql
+php
+*react +node.js
+*redux
+*typescript
+라즈베리파이(리눅스+파이썬+전기회로)

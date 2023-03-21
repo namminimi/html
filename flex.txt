@@ -1,0 +1,33 @@
+flex-box 유연한 박스
+1. container 박스에 주는 속성
+*display: flex; ->블럭에서 플렉스로 변경
+*flex-direction -> 앙템의 배치방향(주축)을 지정
+row/column / row-reverse/ column-reverse
+
+default => row
+*flex-wrap -> 아이템의 배치를 1줄 또는 여러줄 지정
+wrap/no-wrap/wrap-reverse
+
+default => nowrap
+
+*justify-content -> 주축 방향 정렬
+
+flex-start/ flex-end/ center/ space-between(아이템들 사이 간격주고 부모(좌우)에는 
+붙음 float에 with25%느낌)
+/space-around(컨테이너와 아이템 사이에 같은 여백 만듬)
+flex-start 기본값
+
+align-items 한줄 아이템의 교차축 정렬
+flex-start/ flex-end / center / stretch /baseline 글자 기준선 정렬
+stretch 기본값
+
+align-content 여러중의 아이템의 교차축 정렬
+
+flex-start/ flex-end/ center/ space-between/space-around
+
+2.item에게 주는 속성
+
+order 아이템의 배치 순서를 지정
+default => 0
+
+음수도 가능

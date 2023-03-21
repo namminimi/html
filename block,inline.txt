@@ -1,0 +1,14 @@
+﻿block tag 옆에 아무것도 못옴 밑으로 쌓임
+p, h1~h6, div, ul, li, ol, dl, dt, dd
+
+inline tag
+a, span, img, input, select, small, mark
+
+css 기본구문
+선택자 {속성: 속성값;}
+
+1.태그선택자       h1 
+2.아이디 선택자   #title
+3.클래스 선택자   .left
+
+<h1 id="title" class="left"></h1>
